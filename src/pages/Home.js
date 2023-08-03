@@ -10,7 +10,7 @@ const Home = () => {
     <Contenedor_Home >
       <img class="bg" src={fondo_home}></img>
       
-      <h1>PORTFOLIO</h1>
+      <h1 className='top'>PORTFOLIO</h1>
       <div class="centrado-pantalla">
         <p class='titulo'>Laura<br></br>Moya</p>
       </div>
@@ -25,20 +25,20 @@ const Home = () => {
 }
 
 const Contenedor_Home = styled.section`
-.bg {
-  position: fixed; 
+.bg { 
   top: 0; 
   left: 0; 
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
   z-index: -100;
+  height: 100vh;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  margin-top: 5rem;
+  //margin-top: 5rem;
 }
 
 .titulo {
@@ -63,6 +63,14 @@ h1 {
   grid-template-columns: 1fr 1fr;
   position: absolute;
   bottom: 9rem;
+  width: 100%;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  top: 6.5rem;
   width: 100%;
 }
 
