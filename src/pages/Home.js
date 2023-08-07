@@ -8,11 +8,11 @@ import fondo_home from '../images/Laura_1_70.png';
 const Home = () => {
   return (
     <Contenedor_Home >
-      <img class="bg" src={fondo_home}></img>
+      <img className="bg" src={fondo_home}></img>
       
       <h1 className='top'>PORTFOLIO</h1>
-      <div class="centrado-pantalla">
-        <p class='titulo'>Laura<br></br>Moya</p>
+      <div className="centrado-pantalla">
+        <p className='titulo'>Laura<br></br>Moya</p>
       </div>
       
       <div className='bottom'>
@@ -44,6 +44,7 @@ h1 {
 .titulo {
   font-family: 'Bogart', sans-serif;
   font-size: 5.5rem;
+  line-height: 8rem;
 }
 
 .centrado-pantalla {
