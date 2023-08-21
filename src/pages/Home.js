@@ -103,6 +103,7 @@ h1 {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 `

@@ -7,7 +7,7 @@ import imagen_portatil from '../images/foto_portatil.png';
 
 const About = () => {
   return (
-    <Contenedor_About>
+    <Contenedor_About  className='hero'>
       <ul>
         <li><button>ABOUT</button></li>
         <li><button>PROYECTOS</button></li>
@@ -19,7 +19,8 @@ const About = () => {
           <img className="imagen" src={imagen_portatil}></img>
         </div>
         <div className="col">
-          2 of 2
+          <p className='titulo'>Desarrolladora<br></br>Fullstack</p>
+          <p>Portfolio </p>
         </div>
       </div>
       
@@ -28,7 +29,6 @@ const About = () => {
 }
 
 const Contenedor_About = styled.section`
-height: 100vh;
 
 ul {
   list-style-type: none;
@@ -63,13 +63,23 @@ button:hover {
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
   vertical-align: center;
+}
+
+.img-portatil {
+  margin-top: 4rem;
 }
 
 .imagen{
   width: 70%;
   margin: 0rem 13rem;
+}
+
+.titulo {
+  font-family: 'Bogart',sans-serif;
+  font-size: 4.3rem;
+  line-height: 6rem;
+  margin: 0;
 }
 
 `
