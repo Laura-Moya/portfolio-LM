@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import syles from './about.module.css'
 
 //Importaciones propias
 import imagen_portatil from '../images/foto_portatil.png';
@@ -7,28 +7,26 @@ import imagen_portatil from '../images/foto_portatil.png';
 
 const About = () => {
   return (
-    <Contenedor_About  className='hero'>
+    <section className={syles.section}>
       <ul>
-        <li><button>ABOUT</button></li>
+        <li><button className={syles.selected}>ABOUT</button></li>
         <li><button>PROYECTOS</button></li>
         <li><button>CONTACTO</button></li>
         {/*<hr style={{width: '60%', alignContent: 'flex-end'}}></hr>*/}
       </ul>
-      <div className='container'>
-        <div className="img-portatil">
-          <img className="imagen" src={imagen_portatil}></img>
-        </div>
-        <div className="col">
-          <p className='titulo'>Desarrolladora<br></br>Fullstack</p>
+      <div className={syles.container}>
+        <img className={syles.imagen} src={imagen_portatil}></img>
+        <div className={syles.col}>
+          <p className={syles.titulo}>Desarrolladora<br></br>Fullstack</p>
           <p>Portfolio </p>
         </div>
       </div>
-      
-    </Contenedor_About>
+
+    </section>
   )
 }
 
-const Contenedor_About = styled.section`
+/*const Contenedor_About = styled.section`
 
 ul {
   list-style-type: none;
@@ -82,6 +80,6 @@ button:hover {
   margin: 0;
 }
 
-`
+`*/
 
 export default About

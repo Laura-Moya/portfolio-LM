@@ -1,0 +1,77 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    opacity: 0.4
+  }
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom {
+  padding: 0 66px;
+}
+
+.titulo {
+  font-family: 'Bogart', sans-serif;
+  font-size: 5.5rem;
+  line-height: 8rem;
+}
+
+.bottom_labels {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 900 !important;
+}
+
+.escribeme {
+  background-color: #E55C6F;
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px auto 0 auto;
+  border-radius: 999px;
+  color: #fff;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.escribeme svg {
+  width: 24px;
+  height: 24px;
+}
