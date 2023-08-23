@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <div className={syles.container}>
-      <img className={syles.imagen} src={imagen_portatil}></img>
+      <img className={syles.imagen} src='laptop-portfolio.webp'></img>
       <div className={syles.col}>
         <p className={syles.titulo}>Desarrolladora<br></br>Fullstack</p>
         <p>Portfolio </p>

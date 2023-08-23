@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 60px;
   max-width: 1120px;
   margin: 0 auto;
   margin-top: 48px;
@@ -17,6 +17,8 @@
 .imagen {
   width: 100%;
   justify-self: flex-end;
+  /*box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3);*/
+  border-radius: 6px;
 }
 
 .titulo {
